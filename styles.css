@@ -29,9 +29,11 @@
     }
 }
 body {
+    margin: 0;
     height: 100vh;
-	margin: 20px;
-	padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--green-1);
     font-family: "Comic Sans MS", sans-serif;
     
@@ -58,7 +60,7 @@ table, td, th {
 .main-body {
     /* font-family: 'Comic Fixed'; */
     align-items: left !important;
-    animation: growOnLoad 3.0s ease-out forwards;
+
     justify-content: left !important;
     text-align: left !important;
     display: block;
