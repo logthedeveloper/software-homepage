@@ -29,6 +29,7 @@
     }
 }
 body {
+	color: black;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -58,6 +59,7 @@ table, td, th {
     padding: 5px;
 }
 .main-body {
+	color: black;
     /* font-family: 'Comic Fixed'; */
     align-items: left !important;
 
