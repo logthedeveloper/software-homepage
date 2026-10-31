@@ -29,11 +29,9 @@
     }
 }
 body {
-    margin: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	margin: 20px;
+	padding: 20px;
     background-color: var(--green-1);
     font-family: "Comic Sans MS", sans-serif;
     
