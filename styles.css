@@ -1,0 +1,458 @@
+:root {
+    --selec-green: #3c6e40; /* green main colors for site from old site */
+    --green-1: #b7e4c7;
+	--green-2: #5a9e67;
+	--green-3: #3c6e40;
+	--green-4: #8fb79a;
+	--panel: #ffffff;
+	--panel-2: #e3f3e8;
+
+}
+
+::selection {
+    background-color: var(--selec-green);
+    color: white; /* text color for some reason */
+    text-shadow: 1px 1px 3px rgba(183, 228, 199, 0.5);
+}
+@font-face {
+    font-family: 'Comic Fixed'; /* main font for site */
+    src: url('https://codehs.com/uploads/88c3a585e2fc2c0cc0811197dd8de93c') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;
+    font-size: 10px;
+}
+@starting-style {
+    {
+        .main-body b{
+            opacity: 0;
+        }
+    }
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-1);
+    font-family: "Comic Sans MS", sans-serif;
+    
+}
+.emoji {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin: 0 0.15em;
+}
+.gh {
+    background-image: url('https://avatars.githubusercontent.com/u/9919?s=200&v=4'); 
+}
+table, td, th {
+    border-color: var(--green-3);
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.main-body {
+    /* font-family: 'Comic Fixed'; */
+    align-items: left !important;
+    animation: growOnLoad 3.0s ease-out forwards;
+    justify-content: left !important;
+    text-align: left !important;
+    display: block;
+    height: 60vh;
+    /* font-size: 20px; */
+    margin-left; 100px;
+    border-width: 5px;
+    border-color: #43B651;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 25px black;
+    width: 75%;
+    overflow: auto;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+html {
+    scroll-width: thin;
+    scroll-color: var(--green-2) var(--green-2);
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--green-2);
+    border-radius 30px;
+}
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: var(--green-2);
+    border-radius 30px;
+}
+::-webkit-scrollbar-thumb:hover {
+    width: 5px;
+    background-color: var(--green-2);
+    border-radius 30px;
+}
+
+.main-body h1:nth-of-type(1) {
+    animation: growOnLoadB 4.2s ease-out forwards;
+}
+
+.main-body b:nth-of-type(1) {
+
+    animation: growOnLoadB 5.3s ease-out forwards;
+}
+.main-body i:nth-of-type(1) {
+
+    animation: growOnLoadB 6.0s ease-out forwards;
+}
+.main-body b:nth-of-type(2) {
+
+    animation: growOnLoadB 7.0s ease-out forwards;
+}
+.main-body b:nth-of-type(3) {
+
+    animation: growOnLoadB 8.0s ease-out forwards;
+}
+.main-body h2:nth-of-type(1) {
+
+    animation: growOnLoadB 9.4s ease-out forwards;
+}
+.main-body table:nth-of-type(1) {
+
+    animation: growOnLoadB 10.8s ease-out forwards;
+}
+
+#header button.current {
+    background-color: inherit;
+    border-style: solid;
+    border-width: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-color: var(--green-2);
+    border-radius: 20px;
+    transition: border-radius 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-bottom 0.2s ease-in-out, padding-top 0.2s ease-in-out, padding-right 0.2s ease-in-out;
+    font: inherit;
+    color: white;
+    animation: pulseBorder 1.5s infinite ease-in-out;
+}
+#header button.current:hover {
+    background-color: var(--green-4);
+    border-style: solid;
+    border-width: 4px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-color: var(--green-3);
+    border-radius: 40px;
+    transition: border-radius 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-bottom 0.2s ease-in-out, padding-top 0.2s ease-in-out, padding-right 0.2s ease-in-out;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+    animation: none;
+}
+
+@keyframes pulseBorder {
+    0%, 100% {
+        border-color: var(--green-2);
+    }
+    50% {
+        border-color: var(--green-1);
+    }
+}
+
+
+@keyframes growOnLoad {
+  0%, 60% {
+    width: 0%; 
+    height: 0%;
+    opacity: 0;
+    border-radius: 0px;
+    color: rgb(0 0 0 / 0%);
+  }
+  80% {
+      color: rgb(0 0 0 / 0%);
+  }
+  100% {
+    width: 75%; 
+    height: 50vh;
+    opacity: 1;
+    border-radius: 25px;
+    color: rgb(0 0 0 / 100%);
+  }
+}
+@keyframes growOnLoadB {
+  0%, 90% {
+
+    opacity: 0;
+
+    color: rgb(0 0 0 / 0%);
+  }
+  90% {
+      color: rgb(0 0 0 / 0%);
+  }
+  100% {
+
+    opacity: 1;
+
+    color: rgb(0 0 0 / 100%);
+  }
+}
+#header {
+    width: 100%;
+    height: 14%;
+    background-color: var(--green-2);
+    color: white;
+    padding: 12px 16px;
+    padding-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 24px;
+    user-select: none; /* code hs editor SUCKSSS */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: "Comic Sans MS", sans-serif;
+}
+#header button {
+    background-color: inherit;
+    border-style: solid;
+    border-width: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border-color: var(--green-2);
+    border-radius: 20px;
+    transition: border-radius 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-bottom 0.2s ease-in-out, padding-top 0.2s ease-in-out, padding-right 0.2s ease-in-out;
+    font: inherit;
+    color: white;
+}
+#header button:hover {
+    background-color: var(--green-4);
+    border-style: solid;
+    border-width: 4px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-color: var(--green-3);
+    border-radius: 40px;
+    transition: border-radius 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-bottom 0.2s ease-in-out, padding-top 0.2s ease-in-out, padding-right 0.2s ease-in-out;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+}
+.img-container {
+    gap: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 1000px;
+}
+.img-container img {
+    border-radius: 100px;
+    display: block;
+    width: 150px;
+    transition: width, 0.3s;
+}
+.img-container img:hover {
+    border-radius: 100px;
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    transition: width, 0.3s;
+}
+h1 {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.p-container {
+    flex-shrink: 0;
+    gap: 1px;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--green-2);
+    height: 210px;
+    width: 210px;
+    transition: all 1.2s;
+}
+.p-container:hover {
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    background-color: var(--green-2);
+    height: 310px;
+    width: 270px;
+    transition: all 1.2s;
+}
+.p-container img {
+    border-radius: 00px;
+    display: block;
+    padding: 10px;
+    transition: all 01.2s;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+}
+.p-container:hover img {
+    border-radius: 00px;
+    display: block;
+    transition: all 01.2s;
+    height: 130px;
+    width: 250px;
+    object-fit: cover;
+}
+ .p-container:hover p:nth-of-type(1) {
+    gap: 25px;
+    padding-left: 12px;
+    padding-top: 0px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: none;
+    margin: 0;
+    font-size: 14px;
+    transition: all 1.6s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+ .p-container:hover p:nth-of-type(2) {
+    gap: 25px;
+    padding-left: 12px;
+    padding-top: 0px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: none;
+    margin: 0;
+    font-size: 14px;
+    transition: all 1.8s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+ .p-container:hover p:nth-of-type(3) {
+    gap: 25px;
+    padding-left: 12px;
+    padding-top: 0px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: none;
+    margin: 0;
+    font-size: 14px;
+    transition: all 2.0s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+ .p-container:hover p:nth-of-type(4) {
+    gap: 25px;
+    padding-left: 12px;
+    padding-top: 0px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: none;
+    margin: 0;
+    font-size: 14px;
+    transition: all 2.2s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+ .p-container:hover p:nth-of-type(5) {
+    gap: 25px;
+    padding-left: 12px;
+    padding-top: 0px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: none;
+    margin: 0;
+    font-size: 14px;
+    transition: all 2.4s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+ .p-container:hover p:nth-of-type(6) {
+    gap: 25px;
+    padding-left: 12px;
+    padding-top: 0px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding: none;
+    margin: 0;
+    font-size: 14px;
+    transition: all 2.6s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+.p-container p {
+    gap: 25px;
+    align-items: left;
+    display: flex;
+    font-size: 0px;
+    margin: 0;
+    justify-content: left;
+    transition: all 1.2s;
+    text-align: left;
+    opacity: 0;
+    
+}
+ .p-container:hover h1 {
+    gap: 25px;
+    font-size: 24px;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding: none;
+    margin: 0;
+    transition: all 01.2s;
+    text-align: left;
+    opacity: 1;
+    
+} 
+.p-container h1 {
+    gap: 25px;
+    align-items: left;
+    font-size: 0px;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    transition: all 01.2s;
+    text-align: left;
+    opacity: 0;
+    
+
+
+.main-body.skip-animations .main-body * {
+  animation: none !important;
+  opacity: 1 !important;
+  color: initial !important;
+}

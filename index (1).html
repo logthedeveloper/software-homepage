@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>bonjour</title>
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta description="my website yes">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <script>
+  document.addEventListener('click', () => {
+    document.main-body.classList.add('skip-animations');
+  }, { once: true });
+</script>
+    <div id="header">
+     
+    <button class="current" onclick="window.location.href='index.html';"><p class="current">main page</p></button>
+    <button onclick="window.location.href='projects.html';"><p>projects</p></button>
+    <button onclick="window.location.href='links.html';"><p>links</p></button>
+    
+    </div>
+    <div class="main-body"> <!-- so can be aligned left w/o changing body css -->
+        <h1>Hello!</h1>
+        <b>My name is <i>Logan</i> </b><b> and i like to code (of course).</b> <b> This website has all my projects and etc.</b> <br>
+        <h2>Projects list </h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Type</th>
+                <th>Is on github</th>
+            </tr>
+            <tr>
+                <td>Create: Logans Utils</td>
+                <td>Minecraft Mod</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>logancodes.xyz</td>
+                <td>Website</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Minecraft Server</td>
+                <td>Minecraft Server</td>
+                <td>No</td>
+            </tr>
+        </table>
+        <div style="height: 100px;"></div>
+        </div>
+    </body>
+</html>
