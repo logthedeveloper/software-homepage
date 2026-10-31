@@ -8,6 +8,17 @@
 	--panel-2: #e3f3e8;
 
 }
+button {
+	display: inline-block;
+	background: var(--green-2);
+	color: #fff;
+	padding: 6px 12px;
+	border-radius: 8px;
+	cursor: wait;
+	font-size: 14px;
+	font-family: "Comic Fixed"; //Comic Fixed
+	transition: background 0.2s;
+}
 
 ::selection {
     background-color: var(--selec-green);
